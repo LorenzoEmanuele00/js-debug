@@ -49,7 +49,7 @@ input.addEventListener('keypress', function(event) {
         counter = 0;
     }
 
-    const alert = document.getElementsByClassName('alert');
+    const alert = document.querySelector('.alert');
 
     alert.classList.remove('d-none');
     alert.classList.add('d-flex');

@@ -11,7 +11,7 @@
 
 
 // ESERCIZIO 1
-for (let i = 0; i > 5; i++) {
+for (let i = 0; i < 5; i++) { // < non >
     console.log(i);
 }
 // mostra in console i numeri da 0 a 4
@@ -25,6 +25,7 @@ function addIfEven(num) {
     }
     return num;
 }
+addIfEven(2)
 // Funzione che controlla se un numero è pari e lo ritorna aumentato di 5 -- altrimenti ritorna il numero stesso
 
 
@@ -45,12 +46,10 @@ function displayEvenNumbers() {
     // for (let i = 0; i < numbers.length - 1; i++;) {
     for (let i = 0; i <= numbers.length - 1; i++) { //non va messo ; dopo i++ e se si usa length - 1 bisogna mettere <=
         // if (numbers % 2 = 0);
-        if (num % 2 === 0) { // Per comparare si usano 3 =
-            evenNumbers.push(i);
+        if (numbers[i] % 2 === 0) { // Per comparare si usano 3 =
+            evenNumbers.push(numbers[i]);
         }
-        return evenNumbers;
     }
+    return evenNumbers;
 }
 displayEvenNumbers(); // dovrebbe restituire [2,4,6,8]
-
-//la funzione mette nell`array i numeri pari ma non li mostra come indica il termine "display" nel nome della funzione, ma li restituisce soltanto
